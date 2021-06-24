@@ -1,6 +1,5 @@
 package base;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,12 +12,12 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class ScriptBase {
+    public static WebDriver driver;
 
-    public WebDriver driver;
-
+    @Parameters("browser")
     @BeforeTest
     public void init() {
-        String browser="chrome";
+        String browser = "chrome";
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
@@ -35,7 +34,10 @@ public class ScriptBase {
         }
         driver.get("http://automationpractice.com/index.php");
     }
-    //@AfterTest
-    //public void endTest(){
-        //driver.quit();
-    }
+
+   // @AfterTest
+    //public void closeBrowser() {
+    //driver.quit();
+    //driver.close(
+    //}
+}

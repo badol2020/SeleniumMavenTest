@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+       <listener class-name="testng_listener.Listener"></listener>
+    </listeners>
+    <parameter name="browser" value="chrome"></parameter>
+    <test verbose="2" preserve-order="true" name="/Users/badolusa/IdeaProjects/SeleniumMavenTest">
+        <classes>
+            <class name="loginPage.ValidLogInTest">
+                <methods>
+                    <include name="verifyLoginInputProperly"/>
+                    <include name="verifyInvalidLogin"/>
+            </methods>
+            </class>
+    </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="over view page">
+<classes>
+    <class name="loginPage.OverviewPageTest">
+    <methods>
+       <include name="verifyOverviewSpecials"/>
+       <include name="verifyOverviewNewProducts"/>
+       <include name="verifyOverviewBestsellers"/>
+       <include name="verifyOverviewOurStores"/>
+       <include name="verifyOverviewContactus"/>
+       <include name="verifyOverviewTermsAndConditions"/>
+       <include name="verifyOverviewAboutUs"/>
+       <include name="verifyOverviewSitemap"/>
+       <include name="verifyOverviewMyOrders"/>
+       <include name="verifyOverviewMyCreditSlips"/>
+       <include name="verifyOverviewMyAddresses"/>
+       <include name="verifyOverviewMyPersonalInfo"/>
+       <include name="verifyOverviewWomen"/>
+       <include name="verifyWomenCatalogueTabDisplay"/>
+      </methods>
+    </class>
+</classes>
+    </test>
+
+   </suite>
