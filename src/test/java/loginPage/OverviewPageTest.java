@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 public class OverviewPageTest extends ScriptBase {
     OverviewPageController overviewPageController;
 
+
     @Test
     public void verifyOverviewSpecials() {
         overviewPageController = new OverviewPageController(driver);
@@ -89,9 +90,9 @@ public class OverviewPageTest extends ScriptBase {
     }
 
     @Test
-    public void verifyWomenCatalogueTabDisplay(WebDriver driver) {
+    public void verifyWomenCatalogueTabDisplay() {
         overviewPageController = new OverviewPageController(driver);
-        overviewPageController.overviewPageInfo(driver, "WOMEN");
+        overviewPageController.overviewPageInfo(driver, "Women");
 
     }
 

@@ -7,10 +7,11 @@
     <parameter name="browser" value="chrome"></parameter>
     <test verbose="2" preserve-order="true" name="/Users/badolusa/IdeaProjects/SeleniumMavenTest">
         <classes>
-            <class name="loginPage.ValidLogInTest">
+            <class name="loginPage.InvalidLoginTest">
                 <methods>
                     <include name="verifyLoginInputProperly"/>
                     <include name="verifyInvalidLogin"/>
+                    <include name="verifyLoginWithInvalidEmail"/>
             </methods>
             </class>
     </classes>
@@ -36,6 +37,16 @@
       </methods>
     </class>
 </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Search Page">
+    <classes>
+    <class name="searchTest.ValidProductSearch">
+        <methods>
+            <include name="verifySearchByDress"/>
+                <include name="verifySearchByCap"/>
+        </methods>
+    </class>
+    </classes>
     </test>
 
    </suite>

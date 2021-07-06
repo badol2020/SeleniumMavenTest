@@ -14,6 +14,9 @@
 //    public CartPageController(WebDriver driver) {
 //        PageFactory.initElements(driver, this);
 //}
+//public void addCartWithMultipleQuantity(String product,int quantity){
+
+ //       }
 //public void addCartProduct(String product){
 //        driver.findElement(By.xpath("//*[@id='homefeatured']//li/h5/a[@title='"+product+"']")).click();
 //}
