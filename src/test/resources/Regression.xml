@@ -9,14 +9,14 @@
         <classes>
             <class name="loginPage.InvalidLoginTest">
                 <methods>
-                    <include name="verifyLoginInputProperly"/>
                     <include name="verifyInvalidLogin"/>
+                    <include name="verifyValidLogin"/>
                     <include name="verifyLoginWithInvalidEmail"/>
             </methods>
             </class>
     </classes>
     </test>
-    <test verbose="2" preserve-order="true" name="over view page">
+    <test verbose="2" preserve-order="true" name="Overview Page">
 <classes>
     <class name="loginPage.OverviewPageTest">
     <methods>
@@ -43,7 +43,11 @@
     <class name="searchTest.ValidProductSearch">
         <methods>
             <include name="verifySearchByDress"/>
-                <include name="verifySearchByCap"/>
+            <include name="verifySearchByHat"/>
+            <include name="verifySearchByBlouse"/>
+            <include name="verifySearchByTShirts"/>
+            <include name="verifySearchByPrintedSummerDress"/>
+            <include name="verifySearchByCasualDresses"/>
         </methods>
     </class>
     </classes>

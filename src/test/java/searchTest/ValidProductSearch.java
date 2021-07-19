@@ -26,7 +26,7 @@ public class ValidProductSearch extends ScriptBase {
         search.searchProduct(driver, "Blouse");
     }
     @Test
-    public void verifySearchByTshirts(){
+    public void verifySearchByTShirts(){
         search =new Search(driver);
         search.searchProduct(driver,"T-SHIRTS");
 
